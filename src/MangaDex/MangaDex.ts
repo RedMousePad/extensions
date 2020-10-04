@@ -25,7 +25,8 @@ export class MangaDex extends Source {
         "content-type": "application/json"
       },
       data: JSON.stringify({
-        id: ids.map(x => parseInt(x))
+        id: ids.map(x => parseInt(x)),
+        bypassFilter: true
       })
     })]
   }
@@ -348,7 +349,8 @@ export class MangaDex extends Source {
       url: CACHE_SEARCH + `?page=${page+1}&items=100`,
       method: "POST",
       data: JSON.stringify({
-        title: query.title
+        title: query.title,
+        bypassFilter: true
       }),
       headers: {
         "content-type": "application/json"
