@@ -6,12 +6,12 @@ export class MangaDex extends Source {
     super(cheerio)
   }
 
-  get version(): string { return '1.0.19' }
-  get name(): string { return 'MangaDex' }
+  get version(): string { return '2.0.0' }
+  get name(): string { return 'MangaDex Bypassed' }
   get icon(): string { return 'icon.png' }
-  get author(): string { return 'Faizan Durrani' }
-  get authorWebsite(): string { return 'https://github.com/FaizanDurrani' }
-  get description(): string { return 'Extension that pulls manga from MangaDex, includes Advanced Search and Updated manga fetching' }
+  get author(): string { return 'RedMousePad' }
+  get authorWebsite(): string { return 'https://github.com/RedMousePad' }
+  get description(): string { return 'MangaDex repo with licensed manga filter bypassed' }
   get hentaiSource(): boolean { return false }
 
   get rateLimit() { return 1 }
